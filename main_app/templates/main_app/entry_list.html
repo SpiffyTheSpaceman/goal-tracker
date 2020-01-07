@@ -30,13 +30,13 @@
                  Daily Goal Incomplete.
                 {% endif %}
                </p>
-               <p>{{entry.notes | linebreaks}}</p>
+               <p>{{entry.notes|linebreaks}}</p>
          </div>
          <section style="display:flex">
             <a class="btn btn-info m-3" href="{% url 'update_entry' entry.id %}">Update Entry</a>
             <form action="{% url 'delete_entry' entry.id %}" method="POST">
             {% csrf_token %}
-               <input type="submit" class="btn btn-danger m-3" value="Delete"></button>
+               <input type="submit" class="btn btn-danger m-3" value="Delete">
             </form>
           </section>
     </div>
