@@ -2,6 +2,12 @@
 {% block content %}
 <h1> Entries for <em>{{resolution}}!</em></h1>
 
+<div class="jumbotron" class="sticky-top" id="header">
+  <h3>Remember your reason for doing this:</h3>
+  <br>
+  <h1>{{resolution.reason}}</h1>
+</div>
+
 {% if resolution.user == request.user %}
 {% if entry_list %}  
 {% if entry_list.count == 1 %}
