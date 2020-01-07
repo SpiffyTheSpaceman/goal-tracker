@@ -139,7 +139,7 @@ nav > li {
  }
  
 .add-entry {
-   position: absolute;
+   position: fixed;
    right: 5vw;
    top: 40vh;
 }
