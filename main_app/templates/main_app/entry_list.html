@@ -30,7 +30,7 @@
                  Daily Goal Incomplete.
                 {% endif %}
                </p>
-               <p>{{entry.notes}}</p>
+               <p>{{entry.notes | linebreaks}}</p>
          </div>
          <section style="display:flex">
             <a class="btn btn-info m-3" href="{% url 'update_entry' entry.id %}">Update Entry</a>
